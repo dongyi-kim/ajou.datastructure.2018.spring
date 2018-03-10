@@ -29,7 +29,7 @@
 1. 해당 주차 실습 솔루션(소스코드들)을 압축한(<code>.zip</code>) 파일
 2. 해당 주차의 보고서(<code>.docx</code>) 파일 **(압축 하지 마세요)**
 
-- ![Image](./__figures/submitfiles.png)
+- ![Image](./__figures/submitfiles.PNG)
 
 <br>
 
