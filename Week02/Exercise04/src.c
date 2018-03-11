@@ -6,6 +6,7 @@
 
 /**
  * @brief 피보나치 수열의 n번째 항을 재귀적으로 계산하는 함수
+ * <Note> 내부에서 별도의 반복문을 사용하지 마세요!
  * 
  * @param n 항 번호 
  * @return unsigned long long 피보나치 수열의 n번째 항의 값 
@@ -16,7 +17,8 @@ unsigned long long recursive_fibo(unsigned int n)
 }
 
 /**
- * @brief 
+ * @brief 피보나치 수열의 n번째 항을 반복적으로 계산하는 함수
+ * <Note> 내부에서 별도의 함수를 사용하지 마세요!
  * 
  * @param n 항 번호 
  * @return unsigned long long 피보나치 수열의 n번째 항을 
