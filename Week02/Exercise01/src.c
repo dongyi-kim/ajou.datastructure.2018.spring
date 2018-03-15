@@ -14,7 +14,7 @@ int main(void)
 	char *ptr = "I am a string";
 
 	//무엇이 출력될 지 예측해보세요
-	printf("\n [%c], [%d], [%c], [%p], [%p], [%c], [%s]\n", *chptr, *intptr, *ptr, ptr, ptr+5, *(ptr+5), ptr);
+	printf("\n [%c], [%d], [%c], [%llu], [%llu], [%c], [%s]\n", *chptr, *intptr, *ptr, ptr, ptr+5, *(ptr+5), ptr);
 
 	getchar();
 
