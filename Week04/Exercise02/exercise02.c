@@ -167,7 +167,8 @@ int main() {
 * @param r 	visiting row index
 * @param c 	visiting column index
 */
-void pushLoc(int r, int c) {
+void pushLoc(int r, int c)
+{
 
 
 

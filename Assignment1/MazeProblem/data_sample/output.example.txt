@@ -1,0 +1,9 @@
+PATH EXIST
+PATH LENGTH : 11
+
+O#####
+OO#.##
+#O####
+#OOOOO
+#####O
+##...O

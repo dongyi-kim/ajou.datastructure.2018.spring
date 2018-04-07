@@ -106,21 +106,6 @@ void postfix() {
 	int n = 0;
 	int top = 0;
 	stack[0] = eos;
-
 	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
