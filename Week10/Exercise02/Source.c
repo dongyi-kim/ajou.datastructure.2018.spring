@@ -48,13 +48,8 @@ void release_dijoint_set(disjoint_set* set_ptr){
  * @return int 
  */
 int find_parent(disjoint_set* set_ptr, int u){
-	int u_boss = set_ptr->parents[u];
+	int u_boss = 
 
-
-	if (u_boss != u){
-		u_boss = find_parent(set_ptr, u_boss);
-		set_ptr->parents[u] = u_boss;
-	}
 
 	//printf("The boss of a group that the node #%d belongs to is node #%d\n", u, u_boss);
 	return u_boss;
@@ -68,11 +63,7 @@ int find_parent(disjoint_set* set_ptr, int u){
  * @param v 
  */
 void union_set(disjoint_set* set_ptr, int u, int v){
-	int u_boss = find_parent(set_ptr, u);
-	int v_boss = find_parent(set_ptr, v);
 
-
-	set_ptr->parents[u_boss] = v_boss;
 
 	//printf("Merged two groups of node #%d and node #%d.\n", u, v);
 }
