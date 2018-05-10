@@ -30,6 +30,36 @@ tree_ptr make_tree(){
 	return new_tree;
 }
 
+/**
+ * @brief 		해당 노드의 서브 트리를 in-order 순서로 출력해주는 함수
+ * 				올바른 BST의 경우 in-order로 출력하면 오름차순으로 정렬되어 출력된다.
+ * 				[TIP] 테스트용으로 중간 중간 사용하면 유용하다.
+ * 
+ * @param node 	탐색과 출력을 수행 할 노드의 포인터
+ */
+void print_inorder(node_ptr node){
+	if (node->parent == NULL){
+		printf("{ ");
+	}
+
+	if (node != NULL){
+		if (node->left != NULL){
+			print_inorder(node->left);
+			printf(", ");
+		}
+		
+		printf("%c", node->key);
+		
+		if (node->right != NULL){
+			printf(", ");
+			print_inorder(node->right);
+		}
+	}
+
+	if (node->parent == NULL){
+		printf(" }\n");
+	}
+}
 
 /**
  * @brief 	새로운 key값을 가진 노드를 생성한 후 BST에 삽입한다.
@@ -73,6 +103,11 @@ node_ptr insert(tree_ptr tree, element new_key){
 node_ptr find(tree_ptr tree, element target_key){
 	node_ptr parent = NULL;
 	node_ptr candidate = tree->root;
+
+
+
+
+
 
 
 	return candidate;
@@ -126,36 +161,6 @@ void delete_node(tree_ptr tree, element target_key){
 	}
 }
 
-/**
- * @brief 		해당 노드의 서브 트리를 in-order 순서로 출력해주는 함수
- * 				올바른 BST의 경우 in-order로 출력하면 오름차순으로 정렬되어 출력된다.
- * 				[TIP] 테스트용으로 중간 중간 사용하면 유용하다.
- * 
- * @param node 	탐색과 출력을 수행 할 노드의 포인터
- */
-void print_inorder(node_ptr node){
-	if (node->parent == NULL){
-		printf("{ ");
-	}
-
-	if (node != NULL){
-		if (node->left != NULL){
-			print_inorder(node->left);
-			printf(", ");
-		}
-		
-		printf("%c", node->key);
-		
-		if (node->right != NULL){
-			printf(", ");
-			print_inorder(node->right);
-		}
-	}
-
-	if (node->parent == NULL){
-		printf(" }\n");
-	}
-}
 
 void test_case_1(){
 	tree_ptr tree = make_tree();
