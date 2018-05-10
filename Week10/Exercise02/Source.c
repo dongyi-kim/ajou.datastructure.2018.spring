@@ -1,4 +1,5 @@
 #pragma warning(disable: 4996)
+
 #include<stdio.h>
 #include<stdbool.h>
 #include<memory.h>
@@ -48,8 +49,6 @@ void release_dijoint_set(disjoint_set* set_ptr){
  * @return int 
  */
 int find_parent(disjoint_set* set_ptr, int u){
-	int u_boss = 
-
 
 	//printf("The boss of a group that the node #%d belongs to is node #%d\n", u, u_boss);
 	return u_boss;
@@ -63,7 +62,6 @@ int find_parent(disjoint_set* set_ptr, int u){
  * @param v 
  */
 void union_set(disjoint_set* set_ptr, int u, int v){
-
 
 	//printf("Merged two groups of node #%d and node #%d.\n", u, v);
 }
@@ -86,7 +84,7 @@ bool is_same_group(disjoint_set* set_ptr, int u, int v){
 		printf("Node #%d and Node #%d are in the same group with the boss #%d.\n", u, v, u_boss);
 	}
 	else{
-		printf("Node #%d and Node #%d are not in the same group.\n", u, v, u_boss);
+		printf("Node #%d and Node #%d are not in the same group.\n", u, v);
 	}
 	return yes;
 }
