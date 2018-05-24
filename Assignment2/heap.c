@@ -41,9 +41,7 @@ void heapify(edge* tree, int root, int size){
 */
 void build_heap(edge* tree, int size){
 	int parent;
-	for (parent = size / 2; parent >= 0; parent -= 1){
 
-	}
 }
 
 /**
@@ -55,6 +53,8 @@ void build_heap(edge* tree, int size){
 * @param size  간선의 수
 */
 void heap_sort(edge* arr, int size){
+	int root = 0;
+	build_heap(arr, size);
 
 }
 

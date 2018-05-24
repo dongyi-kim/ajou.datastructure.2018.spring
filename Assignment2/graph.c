@@ -51,7 +51,6 @@ graph* find_minimum_spanning_tree(graph* g){
 	spanning_tree = init_graph(g->V, g->V - 1);
 
 
-
 	release_set(set);
 	return spanning_tree;
 }
