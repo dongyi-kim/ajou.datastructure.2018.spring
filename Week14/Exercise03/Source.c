@@ -4,7 +4,6 @@
 #include <malloc.h>
 #include <stdlib.h>
 
-
 /**
  * @brief a[begin] ~ a[end]를 퀵정렬로 정렬해주는 함수
  * 
@@ -30,7 +29,5 @@ int main() {
 		}
 		printf("%d", list[i]);
 	}
-
-
 	return 0;
 }

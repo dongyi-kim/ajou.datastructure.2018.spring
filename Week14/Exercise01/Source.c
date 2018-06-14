@@ -14,6 +14,7 @@
 void insertionSort(int a[], int size) {
 	int i, j, t, temp;
 	
+	// fill your code here
 }
 
 
@@ -31,7 +32,7 @@ int main() {
 		printf("%d", list[i]);
 	}
 
-
 	getchar();
 	return 0;
 }
+
