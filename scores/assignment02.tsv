@@ -29,4 +29,4 @@ student_id	proper_submit	heap	disjoint_set	kruskal	late_submission	total
 201720789	0	0	0	0		0
 201720801	0	0	0	0		0
 201721081	0	0	0	0	-20	0
-201720701	0	0	0	0	-20	0
+201720701	0	20	0	20	-20	20
